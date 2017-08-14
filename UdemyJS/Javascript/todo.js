@@ -17,7 +17,7 @@ while(input !== "quit"){
 		// console.log(list);
 		list.forEach(function(list){
 
-			console.log(list);
+			console.log(list);`
 		});
 	}
 
