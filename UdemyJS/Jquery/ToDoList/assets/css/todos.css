@@ -1,0 +1,12 @@
+#container{
+	background-color: lightblue;
+	width: 360px;
+	/*cool trick to centre things*/
+	margin: 0 auto; 
+	border: black solid 1px;
+}
+
+.completed{
+	color: grey;
+	text-decoration: line-through;
+}
