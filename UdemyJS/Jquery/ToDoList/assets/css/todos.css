@@ -1,9 +1,95 @@
+body{
+	background: #00467F;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #A5CC82, #00467F);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #A5CC82, #00467F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.fa-plus {
+	float:right;
+}
+
+
 #container{
-	background-color: lightblue;
+	background-color: #f7f7f7;
 	width: 360px;
 	/*cool trick to centre things*/
-	margin: 0 auto; 
-	border: black solid 1px;
+	margin: 100px auto; 
+	border: 2px solid gray;
+	font-family: 'Roboto', sans-serif;
+}
+
+h1{
+	background-color: #2980b9;
+	color: white;
+	margin: 0;
+	/*10 px to top and bottom and 20 to left and right*/
+	padding: 10px 20px ;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: normal;
+	font-weight: 400;
+
+}
+
+input{
+	background-color: #f7f7f7;
+	font-size: 18px;
+	width: 100%;
+	padding: 13px 13px 13px 20px;
+	box-sizing: border-box;
+	border: rgba(0, 0, 0);
+}
+
+
+/*when in focus*/
+input:focus{
+	background-color: #fff;
+	border: 3px solid #2980b9;
+	/*blue glowing outline*/
+	outline: none; 
+}
+
+
+
+li{
+	background-color: white;
+	height: 40px;
+	line-height: 40px;
+	color: #666;
+	transition: 0.2s linear;
+}
+/*every second child is the other color*/
+li:nth-child(2n){
+	background-color: #f7f7f7
+}
+
+/*one hover animation*/
+li:hover span{
+	width: 40px;
+	opacity: 1.0; 
+	/*opacity*/
+}
+
+
+span{
+	background-color: #e74c3c;
+	height: 40px;
+	margin-right: 20px;
+	text-align: center;
+	color: white;
+	width: 0px;
+	display: inline-block;
+	opacity: 0;
+	/*opacity*/
+}
+
+
+
+ul{
+	list-style: none;
+	padding: 0px;
+	margin: 0px; 
 }
 
 .completed{
