@@ -1,9 +1,5 @@
-var faker = require("faker");
+var cat = require("cat-me");
+var knock = require("knock-knock-jokes")
 
-for(var i = 0; i <10; i++){
-    var product = faker.commerce.productName();
-    var price = faker.commerce.price();
-    var outString = product + " costs " + price;    
-    console.log(outString);
-}
-
+console.log(cat());
+console.log(knock());
