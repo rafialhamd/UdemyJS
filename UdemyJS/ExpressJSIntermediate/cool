@@ -1,0 +1,13 @@
+ejs needs views to be opened
+
+/:variable 
+
+okay now the weird part
+<%= %> runs javascript
+<% %> this is for logic and anything else, wont show the stuff between. so if statements you dont want to see the actual statements.
+
+passing as an object
+app.get("/fallinlovewith/rusty/:thing", function(req, res){
+    var thing = req.params.thing;
+    res.render("love.ejs",{thingVar: thing}); //this
+});
