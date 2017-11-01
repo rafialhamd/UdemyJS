@@ -6,15 +6,14 @@ app.get("/", function(req,res){
 });
 
 app.get("/speak/:animal", function(req,res){
-    if(req.animal == "pig"){
-    res.send("The pig says oink");
+    var sound ={
+        cow: "moo",
+        dog: "woof",
+        cat: "meow",
+        rat: "memes"
     }
-    if(req.animal == "cow"){
-    res.send("The cow says moo");
-    }
-    if(req.animal == "fox"){
-    res.send("*retarded music tan probably likes*");
-    }
+    
+    res.send(sound[req.animal]);
 });
 
 app.get("/repeat/:sound/:repetitions", function(req,res){
