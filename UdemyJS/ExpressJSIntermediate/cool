@@ -11,3 +11,10 @@ app.get("/fallinlovewith/rusty/:thing", function(req, res){
     var thing = req.params.thing;
     res.render("love.ejs",{thingVar: thing}); //this
 });
+
+so what is this public directory?
+It can be called whatever you want but it will serve as a location for stylesheets
+
+what about the files in public? shouldnt we link to public/app.css not just app.css?
+apparently express has a way to tell where it should look for all of it's stylesheets
+
